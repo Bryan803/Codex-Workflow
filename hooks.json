@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|shell|local_shell|exec_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.codex/hooks/bash-timeout.py",
+            "timeout": 10,
+            "statusMessage": "Checking command time limit"
+          }
+        ]
+      }
+    ]
+  }
+}

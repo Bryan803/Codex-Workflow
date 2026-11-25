@@ -1,0 +1,12 @@
+# Whitelist: track only my own config. Auth, history, sessions, sqlite,
+# logs, caches, plugins and workplans stay local.
+/*
+!/.gitignore
+!/AGENTS.md
+!/config.toml
+!/hooks.json
+!/hooks/
+!/agents/
+!/skills/
+/skills/.system/
+__pycache__/
